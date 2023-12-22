@@ -1,0 +1,53 @@
+.main-container{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px; 
+  
+}
+
+.skill-container{
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px; /* Adjust the width as needed */
+}
+.text-container{
+  display: flex
+    
+}
+.main-image {
+  width: 200px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+.thumbnail-image{
+  width: 32px; 
+  height: auto;
+  margin-right: 5px; 
+  
+}
+.skill-main-text{
+  display:flex;
+  align-items: center;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  text-align: center;
+}
+.skill-sub-text{
+  margin-left: 5px;
+  padding-top: 2px;
+  text-align: left;
+}
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 800px;
+  height: auto;
+  background: rgba(178, 183, 164);
+  justify-content: center;
+  align-items: center;
+}

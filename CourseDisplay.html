@@ -1,51 +1,72 @@
-<div class="main-container">
-    <!-- display content --> 
-  <div class="skill-container">
-      <!-- Pop up content -->
-      <div class="popup-overlay" id="popupCplus">
-        <div class="popup-content">
-          <p>Popup Content Goes Here</p>
-          <p>Popup Content Goes Here</p>
-          <p>Popup Content Goes Here</p>
-          <p>Popup Content Goes Here</p>
-          <p>Popup Content Goes Here</p>
-          <p>Popup Content Goes Here</p>
-          <p>Popup Content Goes Here</p>
-          <p>Popup Content Goes Here</p>
-          <p>Popup Content Goes Here</p>
-          <button onclick="closePopup()">Close</button>
-        </div>
-      </div>
-    <figure>
-      <img src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-html-file-document-icon-png-image_896931.jpg" alt="Main Image" class="main-image" onclick="openPopup()">
-      <figurecaption>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hoang Nguyen - Portfolio</title>
+  <link rel="stylesheet" href="./mainlayout.css" />
+  <script src="./mainfunction.js"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <!-- display content -->
+    <div class="skill-container">
+      <figure>
+        <img
+          src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-html-file-document-icon-png-image_896931.jpg"
+          alt="Main Image" class="main-image" onclick ="openPopup()">
+        <figurecaption>
           <div class="skill-main-text">
-            <img src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-html-file-document-icon-png-image_896931.jpg" alt="Main Image" class="thumbnail-image">
+            <img
+              src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-html-file-document-icon-png-image_896931.jpg"
+              alt="Main Image" class="thumbnail-image">
             <h4>Class C++ goes Here</h4>
-         </div>
-        
-    <!-- sub content -->
-         <div class="skill-sub-text" onclick = "openPopup()">
-         <p>Project management course with a simple display. Users can add or remove their courses.</p>
           </div>
-    </figurecaption>
-  </div>
-    
-  <div class="skill-container">
-    <figure>
-      <img src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-html-file-document-icon-png-image_896931.jpg" alt="Main Image" class="main-image">
-      <figurecaption>
+
+          <!-- sub content -->
+          <div class="skill-sub-text">
+            <p>Project management course with a simple display. Users can add or remove their courses.</p>
+          </div>
+        </figurecaption>
+    </div>
+
+    <div class="skill-container">
+      <figure>
+        <img
+          src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-html-file-document-icon-png-image_896931.jpg"
+          alt="Main Image" class="main-image">
+        <figurecaption>
           <div class="skill-main-text">
-            <img src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-html-file-document-icon-png-image_896931.jpg" alt="Main Image" class="thumbnail-image">
+            <img
+              src="https://png.pngtree.com/png-vector/20190330/ourmid/pngtree-html-file-document-icon-png-image_896931.jpg"
+              alt="Main Image" class="thumbnail-image">
             <h4>Class Java goes Here</h4>
-         </div>
-        
-         <div class="skill-sub-text">
-         <p>Project management course with a simple display. Users can add or remove their courses.</p>
           </div>
-    </figurecaption>
+
+          <div class="skill-sub-text">
+            <p>Project management course with a simple display. Users can add or remove their courses.</p>
+          </div>
+        </figurecaption>
+    </div>
+
+    <!-- Pop up content -->
+    <div class="popup-overlay" id="popupCplus">
+      <div class="popup-content">
+        <p>Popup Content Goes Here</p>
+        <p>Popup Content Goes Here</p>
+        <p>Popup Content Goes Here</p>
+        <p>Popup Content Goes Here</p>
+        <p>Popup Content Goes Here</p>
+        <p>Popup Content Goes Here</p>
+        <p>Popup Content Goes Here</p>
+        <p>Popup Content Goes Here</p>
+        <p>Popup Content Goes Here</p>
+        <button id="editText" onclick="editText()"> Edit</button>
+        <button id="submitBtn" style="display: none;" onclick="submitChanges()">Submit</button>
+        <button onclick="closePopup()">Close</button>
+      </div>
+    </div>
   </div>
-    
-</div>
-  
-  
+</body>
+
+</html>

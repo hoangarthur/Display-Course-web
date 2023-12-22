@@ -1,7 +1,26 @@
+
 function openPopup() {
   document.getElementById("popupCplus").style.display = "flex";
 }
 
 function closePopup() {
   document.getElementById("popupCplus").style.display = "none";
+
 }
+
+function editText() {
+  var editButton = document.getElementById("editText");
+  var submitButton = document.getElementById("submitBtn");
+  var paragraphs = document.querySelectorAll("#popupCplus p");
+
+  paragraphs.forEach(function(paragraph) {
+    paragraph.contentEditable = true;
+  });
+
+  editButton.style.display = "none";
+  submitButton.style.display = "block";
+}
+
+function submitChanges() {
+    alert("Changes submitted!");
+  }

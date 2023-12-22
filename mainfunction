@@ -1,3 +1,6 @@
+var editButton = document.getElementById("editText");
+var submitButton = document.getElementById("submitBtn");
+var paragraphs = document.querySelectorAll("#popupCplus p");
 
 function openPopup() {
   document.getElementById("popupCplus").style.display = "flex";
@@ -5,22 +8,21 @@ function openPopup() {
 
 function closePopup() {
   document.getElementById("popupCplus").style.display = "none";
-
 }
 
 function editText() {
-  var editButton = document.getElementById("editText");
-  var submitButton = document.getElementById("submitBtn");
-  var paragraphs = document.querySelectorAll("#popupCplus p");
-
-  paragraphs.forEach(function(paragraph) {
-    paragraph.contentEditable = true;
-  });
-
   editButton.style.display = "none";
+  paragraphs.forEach(function (paragraph) {
+    if (editButton.style.display == "none") {
+      paragraph.contentEditable = true;
+    }
+  });
   submitButton.style.display = "block";
 }
 
 function submitChanges() {
-    alert("Changes submitted!");
-  }
+  alert("Changes submitted!");
+  editButton.style.display = "block"
+  submitButton.style.display = "none"
+  paragraphs.forEach(function (paragraph) { paragraph.contentEditable = false })
+}
